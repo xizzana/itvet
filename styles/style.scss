@@ -1,0 +1,80 @@
+@import "loader";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: jaba;
+}
+
+@font-face {
+    src: url("/font/Prototype.ttf");
+    font-family: jaba;
+}
+
+.nopadding {
+    padding: 0;
+    margin: 0;
+}
+
+@import "animations";
+
+.costum {
+    ul li {
+        cursor: pointer;
+    }
+}
+
+.box1,
+.box2,
+.box3 {
+    background-color: #2c2c32;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.costum1 {
+    background: url("/images/1601202548_screenshot_7.jpg") no-repeat center rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.down {
+    border-radius: 50%;
+    cursor: pointer;
+    animation: jaba 0.9s ease-in-out infinite alternate, pulse 2s infinite alternate-reverse;
+
+    &:hover {
+        text-shadow: 0 0 23px #FF0000, 0 0 5px #0000FF;
+    }
+}
+
+.backbtn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    opacity: 0;
+    pointer-events: none;
+    animation: jaba 0.5s ease-in-out infinite alternate,
+        pulse 1s infinite alternate;
+
+    i {
+        color: white;
+        font-size: 20px;
+
+        &:hover {
+            transition: 0.3s ease-in-out;
+            color: darkred;
+        }
+    }
+}
+
+.backbtn.active {
+    opacity: 1;
+    bottom: 3rem;
+    transform: rotate(360deg);
+    transition: all 0.5s;
+    pointer-events: all;
+}
+
+@import "form";
+@import "footerstyle";

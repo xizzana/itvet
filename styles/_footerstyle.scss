@@ -1,0 +1,25 @@
+$color1: #807c76;
+
+footer {
+    background-color: #1b1b1f;
+
+    i {
+        cursor: pointer;
+        color: $color1;
+        padding: 10px;
+        border-radius: 50%;
+        border: 2px solid $color1;
+
+        animation: pulse 2s ease-in-out infinite alternate;
+
+        &:first-child {
+            padding: 10px 15px 10px;
+        }
+
+        &:hover {
+            color: white;
+            transition: 0.3s ease-in-out;
+            border: 2px solid #fff;
+        }
+    }
+}

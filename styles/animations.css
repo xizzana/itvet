@@ -1,0 +1,46 @@
+@-webkit-keyframes jaba {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes jaba {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    text-shadow: 0 0 13px #FF0000, 0 0 5px #0000FF;
+  }
+  70% {
+    text-shadow: 0px 10px 30px #291ba7, 0 0 5px #76cc13;
+  }
+  100% {
+    text-shadow: 0px 0px 5px #FF0000, 0 0 5px #0000FF;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 13px #FF0000, 0 0 5px #0000FF;
+  }
+  70% {
+    text-shadow: 0px 10px 30px #291ba7, 0 0 5px #76cc13;
+  }
+  100% {
+    text-shadow: 0px 0px 5px #FF0000, 0 0 5px #0000FF;
+  }
+}
+/*# sourceMappingURL=animations.css.map */
